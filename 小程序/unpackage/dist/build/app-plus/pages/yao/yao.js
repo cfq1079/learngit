@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"can.",[1],"data-v-40b3e558 { width: 100%; height: 100vh; }\nwx-button.",[1],"data-v-40b3e558 { width: 100%; }\n",],"Some selectors are not allowed in component wxss, including tag name selectors, ID selectors, and attribute selectors.(./pages/yao/yao.wxss:6:1)",{path:"./pages/yao/yao.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/yao/yao.wxml') } }));

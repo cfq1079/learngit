@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/ding/ding",
+    "pages/add/add",
+    "pages/address/address",
+    "pages/tream/tream",
+    "pages/yao/yao",
+    "pages/my/my",
+    "pages/jifen/jifen",
+    "pages/login/login",
+    "pages/phone/phone",
+    "pages/nav/nav",
+    "pages/yaos/yaos",
+    "pages/seat/seat"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#39cffc",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/imge/首页-选中.png",
+        "selectedIconPath": "/static/imge/首页-选中 (1).png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tream/tream",
+        "iconPath": "/static/imge/团队.png",
+        "selectedIconPath": "/static/imge/团队 (1).png",
+        "text": "我的团队"
+      },
+      {
+        "pagePath": "pages/yao/yao",
+        "iconPath": "/static/imge/邀请 (2).png",
+        "selectedIconPath": "/static/imge/邀请 (1).png",
+        "text": "邀请好友"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/static/imge/个人中心.png",
+        "selectedIconPath": "/static/imge/个人中心 (1).png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-tab": "../../wxcomponents/vant/tab/index",
+    "van-tabs": "../../wxcomponents/vant/tabs/index",
+    "van-button": "../../wxcomponents/vant/button/index",
+    "van-popup": "../../wxcomponents/vant/popup/index",
+    "van-action-sheet": "../../wxcomponents/vant/action-sheet/index",
+    "van-stepper": "../../wxcomponents/vant/stepper/index",
+    "van-grid": "../../wxcomponents/vant/grid/index",
+    "van-grid-item": "../../wxcomponents/vant/grid-item/index"
+  },
+  "sitemapLocation": "sitemap78.json"
+}

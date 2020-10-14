@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"小程序","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"navigationBarTitleText":"卓盈助手","usingComponents":{}}},"pages/detail/detail.html":{"window":{"navigationBarTitleText":"商品详情","usingComponents":{"van-tabs":"../../wxcomponents/vant/tabs/index","van-tab":"../../wxcomponents/vant/tab/index","van-action-sheet":"../../wxcomponents/vant/action-sheet/index","van-stepper":"../../wxcomponents/vant/stepper/index"}}},"pages/ding/ding.html":{"window":{"navigationBarTitleText":"立即下单","usingComponents":{}}},"pages/add/add.html":{"window":{"navigationBarTitleText":"地址列表","usingComponents":{}}},"pages/address/address.html":{"window":{"navigationBarTitleText":"添加地址","usingComponents":{}}},"pages/tream/tream.html":{"window":{"navigationBarTitleText":"我的团队","usingComponents":{"van-tabs":"../../wxcomponents/vant/tabs/index","van-tab":"../../wxcomponents/vant/tab/index"}}},"pages/yao/yao.html":{"window":{"navigationBarTitleText":"邀请好友","usingComponents":{}}},"pages/my/my.html":{"window":{"navigationBarTitleText":"我的","usingComponents":{"van-grid":"../../wxcomponents/vant/grid/index","van-grid-item":"../../wxcomponents/vant/grid-item/index"}}},"pages/jifen/jifen.html":{"window":{"navigationBarTitleText":"积分兑换","usingComponents":{}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"授权登录","usingComponents":{}}},"pages/phone/phone.html":{"window":{"navigationBarTitleText":"绑定手机","usingComponents":{}}},"pages/nav/nav.html":{"window":{"usingComponents":{}}},"pages/yaos/yaos.html":{"window":{"usingComponents":{}}},"pages/seat/seat.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"#cdcdcd","selectedColor":"#39cffc","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","iconPath":"/static/imge/首页-选中.png","selectedIconPath":"/static/imge/首页-选中 (1).png","text":"首页"},{"pagePath":"pages/tream/tream.html","iconPath":"/static/imge/团队.png","selectedIconPath":"/static/imge/团队 (1).png","text":"我的团队"},{"pagePath":"pages/yao/yao.html","iconPath":"/static/imge/邀请 (2).png","selectedIconPath":"/static/imge/邀请 (1).png","text":"邀请好友"},{"pagePath":"pages/my/my.html","iconPath":"/static/imge/个人中心.png","selectedIconPath":"/static/imge/个人中心 (1).png","text":"我的"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/detail/detail","pages/ding/ding","pages/add/add","pages/address/address","pages/tream/tream","pages/yao/yao","pages/my/my","pages/jifen/jifen","pages/login/login","pages/phone/phone","pages/nav/nav","pages/yaos/yaos","pages/seat/seat"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.5.1","usingComponents":{"van-tab":"../../wxcomponents/vant/tab/index","van-tabs":"../../wxcomponents/vant/tabs/index","van-button":"../../wxcomponents/vant/button/index","van-popup":"../../wxcomponents/vant/popup/index","van-action-sheet":"../../wxcomponents/vant/action-sheet/index","van-stepper":"../../wxcomponents/vant/stepper/index","van-grid":"../../wxcomponents/vant/grid/index","van-grid-item":"../../wxcomponents/vant/grid-item/index"}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

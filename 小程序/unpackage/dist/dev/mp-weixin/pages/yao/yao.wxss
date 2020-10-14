@@ -1,0 +1,16 @@
+
+.can.data-v-414b42ba {
+	width: 100%;
+	height: 100vh;
+}
+button.data-v-414b42ba {
+	width: 100%;
+}
+.text.data-v-414b42ba{
+	font-size: 30px;
+	font-family: 微软雅黑;
+	color: #AFAFAF;
+	text-align: center;
+	margin-top: 100px;
+}
+

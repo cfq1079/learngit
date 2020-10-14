@@ -1,0 +1,22 @@
+
+.uni-form-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-content: flex-start;
+	        align-content: flex-start;
+	border-bottom: 1px solid #ededed;
+	padding: 15px;
+}
+.title {
+	width: 25vw;
+}
+.default {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
